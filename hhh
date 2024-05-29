@@ -1,0 +1,8 @@
+ var nombre = prompt("ingrese tu nombre")
+   document.write("<h1>el nombre ingresado es </h1>" + nombre + '<br>')
+
+
+
+
+   var nombre = prompt("ingesa tu helado favorto")
+   document.write("el helado ingresado es" + nombre)

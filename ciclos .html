@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<SCript>
+    /** Crear un algoritmo que imprima los numeros del 1 al 10 */
+   // var contador = 1;
+   // document.write("Empece <br>")
+   // while(contador <=1000) { // se ejecuta MIENTRAS la condicion sea verdadera
+   // document.write(contador + "<br>")
+//contador++
+// IMPORTANTISIMO: cambiar el valor para que salga de while
+  //  }
+// document.write("Termine")
+
+/** Crear un algoritmo qu me pida una palabra, finaliza cuando
+ * ingrese la palabra parar */
+// var palabra = ""
+// while(palabra != "PARAR"){
+   // palabra = prompt("Ingrese la palabra: ")
+   // document.write(palabra + "<br>")
+// }
+
+/** Crear un algoritmo que reciba un numero y lo sume con los anteriores,
+ * hasta que el total de la suma sea mayor o igual que 20 */
+// var suma = 0
+//while(suma < 20){
+   // var numero = parseInt(prompt("Ingrese el numero:"))
+   // document.write(numero + "<br>")
+  //  suma = suma+numero
+//}
+
+/** Crear un algoritmo que me solicite un numero,
+ * y lo sume solo si es PAR,
+ * dejara de solicitar el numero cuando se ingrese el numero 0 */
+// var suma = 0
+// var numero
+//while(numero != 0){
+// numero = parseFloat(prompt("Ingrese el numero"))
+// document.write(numero + "<br>")
+// if(numero%2 == 0){
+   // suma = suma+numero
+// }
+// }
+// document.write("La suma es: " + suma)
+/**
+ * Escriba un programa que tenga un numero definido 
+ * y luego permita al usuario adivinar el numero.
+ * El programa debe seguir solicitando con un ciclo while 
+ * hasta que el usuario adivine correctamente
+ */
+//  var numeroOculto = 35
+// var numero
+// while(numero != numeroOculto){
+  //  numero = parseInt(prompt("Ingrese el numero"))
+  //  document.write(numero + "<br>")
+// } document.write("Felicitaciones el numero es:" + numeroOculto)
+
+/** Reto #1 Suma hasta 50, crea una variable que se llame total, despues
+ * pide a tu usuario que ingrese un numero y lo sume al valor total.
+ * Haz que esto se repita hasta 50 y muestre el valor el
+ * valor en pantalla */
+
+// var total = 0
+// while(total<= 50){
+  //  var numero = parseInt(prompt("Ingrese el numero"))
+//    total = total+numero
+// }
+// document.write("el resultado es: " + total)
+
+ /**Reto #2  Mas alla de 42, crea un codigo que pida al usuario un numero 
+  * que se repita hasta hasta que coloque un numero mayor a 42,
+  * cuando se cumpla esta condicion muestre el resultado en pantalla 
+  * indicando esto al usuario y finalice el ciclo */
+// var numero = 0
+// while(numero < 42){
+  //  numero = parseInt(prompt("Ingrese el numero:"))
+  //  document.write(numero + "<br>")
+//}
+// document.write("El ciclo termino")
+  /** Reto #3 Suma consecutivas pide al usuario que ingrese 2 numeros
+   * y lo sume. Despues pregunta si lo quiere añadir otro numero: si la repuesta 
+   * es afirmativa añadele al total; 
+   * en caso contrario finaliza el ciclo y muestra el resultado en pantalla */
+
+  // var num1 = parseInt(prompt("Ingrese el num1"))
+ //  var num2 = parseInt(prompt("Ingrese numero 2"))
+  // var total = num1+num2
+ //  var preguntaPorNuevoNumero = prompt("Quiere ingresar otro numero")
+  // while(preguntaPorNuevoNumero == "Si"){
+   // var numero = parseFloat(prompt("Ingrese el nuevo numero"))
+  //  total = total+numero
+  //  preguntaPorNuevoNumero = prompt("Quiere ingresar otro numero")
+   // }
+   // document.write("El total es total" + total)
+
+   
+
+   /** Reto #4 Listas de invitados estas organizando un banquete al que quires invitar a tus amigos crea un 
+    * programa pida el nombre de unos de tus amigos, al hacerlo aumenta en uno en uno
+    * variable contadora 
+    * despues pregunta si quire invitar a alguien mas si la
+    * repuesta es afirmativa entonces preguntas por una persona mas,
+    * en caso contrario cierra el ciclo y muestra en pantalla cuantos invitados son: */
+ //  var nombre = prompt("Ingrese el nombre de tu amigo: ")
+ //  var contador = 1
+   // var preguntarPorOtroAmigo = prompt("¿Ptreguntar por otro amigo? ")
+   // while(preguntarPorOtroAmigo == "si" ){
+    // nombre = prompt("Ingrese el nombre de tu amigo" )
+   // contador++
+   // preguntarPorOtroAmigo = prompt("¿Preguntar por otro amigo? ")
+   // }
+ //  document.write = prompt("La cantidad de amigod invitados es: ", contador)
+/** Reto #5 "UN ELEFANTE SE BALEANCEABA...."
+ * Escribe un programa que inicie mostrando en pantalla la letra de "un elefante se balanceaba"
+ * iniciando con el numero 1,
+ * despues pregunta al usuario cuantos elefantes mas se balancearan y debe responder un numero
+ * mas al mostrado.
+ * En caso de ingresar un numero diferente pedirle que intente de nuevo y repetir el ciclo hasta tener
+ * 10 elefantes.
+ * Tomar en cuenta cuando el texto cuando el texto muestre un solo elefante y varios elefantes
+ */
+
+ // var texto = " Elefante se balanceaba en la tela de una araña, como veia que resistia"
+// var elefante = parseInt(prompt("Ingrese elefantes"))
+// var contador = 1
+// while(contador <= 10){
+//  if(contador != 1){
+   // textoElefantes = "Elefantes"
+ // }
+ // document.write(contador + "" + textoElefante + "" + texto + "<br>")
+ // contador++
+// }
+
+/**Implementar una cuenta regresiva para el despegue de una nave,
+ * comenzando en 15 e imprimir: "Despegue en"
+ * y el numero de la cuenta regresiva 
+ * cuando la cuenta llegue a 0, imprimir "Buen viaje"
+ * cuando la cuenta vaya en 10 imprimir "Encendiendo motores"
+ */
+// var cronometro = 15
+ //  while(cronometro>0){
+ // document.write("Despegue en: " + cronometro + "<br>")
+ // if(cronometro == 10){
+  //  document.write("Encendiendo motores <br>")
+  // }
+//  cronometro--
+//}
+// document.write("Buen viaje")
+
+</SCript>
+</html>

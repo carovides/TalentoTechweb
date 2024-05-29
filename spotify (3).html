@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+  <div class="selector-tema">
+    <select name="" id="tema" onchange="cambiarTema ()">
+      <option value="light">Claro</option>
+      <option value="dar">Oscuro</option>
+      <option value="crazy">Loco</option>
+    </select>
+  </div>
+
+<!--imagen-->
+<div>
+<img src="https://logodownload.org/wp-content/uploads/2016/09/Spotify-logo-13.jpg" width="30%">
+</div>
+ <!--division-->
+ <div>
+    <h1> Spotify</h1>
+    <p>Spotify es un servicio de música,
+       pódcasts y vídeos 
+      digitales123que te da acceso 
+        a millones de canciones
+         y a otro contenido
+         de creadores de todo 
+        el mundo13. Las
+         características
+         de Spotify
+         incluyen4:
+        Cuenta con más de 140  
+        millones de 
+        usuarios activos.
+        Se encuentra presente en 60 mercados
+         a nivel mundial.
+       </p>
+ </div>
+ <div>
+  <ul>
+    <h1>servicios</h1>
+<li>Encuentra música de todo tipo</li>
+<li>Crea tus listas de reproducción personalizadas</li>
+<li>Descubrimiento semanal</li>
+<li>Radio del artista, álbum o playlist</li>
+  </ul>
+ </div>
+<h2>datos de contacto</h2>
+<ol>
+open.spotify.com
+Wikipedia
+Facebook
+Instagram
+YouTube
+</ol>
+ <hr>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/pnA0LY-BE_A?si=fbXdo8t0hXHZugVp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=pnA0LY-BE_A">YouTube.www.com</a>
+<hr>
+<form>
+<label for=""> Nommbre</label>
+<input type="text"  placeholder="Escriba e Nommbre" required  name="nombre" id="nombre">
+<br>
+<label for="">cedula</label>
+<input type="text" name="cedula" id="cedula">
+<br>
+<label for="">escoja una ciudad</label>
+<select name="ciudad"><required>
+<option value="">-</option>
+<option value="Bogotá">Bogotá</option>
+<option value="Chia">Chia</option>
+<option value="Soacha">Soacha</option>
+</select>
+<br>
+<label for="">telefono</label>
+<input type="tel" required name="telefono" id="telefono">
+<br>
+<label for="">direccion</label>
+<input type="dire" required name="direccion" id="direccion">
+<br>
+<label for="">correo electronico</label>
+<input type="email" required placeholder="ingresar email" name="email" id="email">
+<br>
+
+<label for="">documento anexo</label>
+<input type="file" required placeholder="subir documento" id="subir documento">
+<br>
+<label for="">fecha de nacimiento</label>
+<input type="date" required max="2024-05-02 min 1900-01-01" name="fecha_nacimiento" id="fecha_nacimiento">
+<br>
+<button type="button" onclick="enviarFormulario()">Enviar</button>
+<br>
+<font color="blue" face="jokerman">
+<h1>ventas por mes del año 2023</h1>
+</font>
+<table>
+  <link rel="stylesheet" href="spotify.html">
+  <caption>
+    ventas por mes
+    <style>
+      table, th, td{
+        border: 2px solid black;
+      border-collapse: collapse;
+      }
+    </style>
+  <tr>
+  <td> mes </td>
+      <th>ventas</th>
+    <th>listas mas reproduccidas</th>
+  </tr>
+</border>
+  <tr>
+    <td>Enero</td>
+    <td>3.000.000.000</td>
+    <td>Regeton</td>
+  </tr>
+  <tr>
+    <td>Febrero</td>
+    <td>5.000.000.000</td>
+    <td>Pop latino</td>
+  </tr>
+  <tr>
+    <td>Marzo</td>
+    <td>4.500.000.000</td>
+    <td>Reggae</td>
+  </tr>
+  <tr>
+    <td>Abril</td>
+    <td>2.500.000.000</td>
+    <td>Ranchera</td>
+  </tr>
+  <tr>
+    <td>Mayo</td>
+    <td>7.000.000.000</td>
+    <td>Salsa choque</td>
+  </tr>
+  <tr>
+    <td>Junio</td>
+    <td>3.843.645.000</td>
+    <td>Pop</td>
+  </tr>
+  <tr>
+    <td>Julio</td>
+    <td>2.345.000.000</td>
+    <td>Rock</td>
+  </tr>
+  <tr>
+    <td>Agosto</td>
+    <td>1.150.000.233</td>
+    <td>Hip Hop</td>
+  </tr>
+  <tr>
+    <td>Sptiembre</td>
+    <td>900.534.099</td>
+    <td>Vallenato</td>
+  </tr>
+  <tr>
+    <td>Octubre</td>
+    <td>6.177.345.003</td>
+    <td>Baladas</td>
+    <tr> 
+    <td>Noviembre</td>
+      <td>845.576.998</td>
+      <td>Corridos</td>
+    </tr>
+    <td>Diciembre</td>
+    <td>8.123.752.000</td>
+    <td>Variada</td>
+  </tr>
+<script>
+  function cambiarTema(){
+    var body = document.getElementById("body")
+    var tema = document.getElementById("tema").value
+    var  fondo =""
+    var letra =""
+    if(tema == "light"){
+      fondo = "white"
+      letra = "black"
+    }
+  }
+function enviarFormulario(){
+  var nombre = document.getElementById("nombre").value
+  var apellido = document.getElementById("apellidos").value
+  if(nombre && apellidos){
+    alert("Los datos del formulario")
+  } else if(tema == "dark"){
+    fondo = "black"
+    letra = "white"
+  } else if(tema == "crazy"){
+    fondo = "tomato"
+    letra = "yellow"
+  }
+  body.style.backgroundColor = fondo
+  body.style.color = letra
+
+  
+}
+function enviarFormulario(){
+  var nombre = document.getElementById("Nombre").value
+  var cedula = document.getElementById("Cedula").value
+  var Telefono = document.getElementById("Telefono").value
+  var Direccion = document.getElementById("Direccion").value
+  var Email = document.getElementById("Email").value
+  var escojaCiudad = document.getElementById("escojaCiudad").value
+  var fecha_nacimiento = document.getElementById("fecha_nacimiento").value
+  if (nombre && cedula && Telefono && Direccion && Email && fecha_nacimiento &&  escojaCiudad){
+    alert("Los datos del formulario son: " +nombre + "" + Cedula + "" + Telefono + "" + Direccion + "" + escojaCiudad + "" + Email + "" + fecha_nacimiento + "" + "<br>")
+ 
+  } 
+
+}
+</script>
+  
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

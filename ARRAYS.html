@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //  var estudiantes = ["Juan", "Camila", "Jose", "Andrea", "Monica"]
+     //   var notas = [3.5, 4, 4.3, 2.5, 4.2]
+      //  var frutas = ["Mango", "Pera", "Durazno", "Piña"]
+      //  document.write(estudiantes[2])
+        // document.write("<br>")
+      //  document.write("La longitud del array es:" + estudiantes.length)
+
+/**
+ * Agregar un elemento al array
+ */
+//var clientes = ["Luis", "Roberto","Rebeca", "Maria"]
+//clientes.push("Marcela") // añade un elemento al final
+//document.write(clientes)
+//document.write("<br>")
+
+/**
+ * Eliminar un elemento del array
+ */
+//clientes.pop() // elimina el ultimo elemento
+// (indice, cantidad)
+//clientes.splice(0, 1) // elimino un elimento en una posicion indicada
+//document.write(clientes)
+
+/** Ordenar el arary
+ */
+
+ //clientes.sort() // Ordena
+// clientes.reverse() //Ordena al reves
+// document.write(clientes)
+
+ /**
+  * Implementar 4 array
+  * uno de paises
+  * uno de ciudades
+  * uno de departamentos
+  * uno de universidades
+  * mostrar la longitud de cada array e imprimir sus elementos
+  */
+ //var paises = ["Colombia","Venezuela","Japon", "Chile", "Peru"]
+ //document.write(paises)
+// document.write("Los elementos del array son: " + paises + "su longitud es: " + paises.length + "<br>")
+ //var ciudades = ["Pereira", "Manizales", "Bucaramanga", "Bogota", "Medellin"]
+ //document.write(ciudades)
+ //document.write("Los elementos del aray son:" + ciudades +" y su longitud es: " + ciudades.length + <br>)
+ //var departamentos = ["Cundinamarca", "Bolivar", "Sucre"]
+ //document.write(departamentos)
+ //document.write("Los elementos del aray son:" + departamentos +" y su longitud es: " + departamentos.length + "<br>")
+
+// var universidades = ["Piloto","Catolica", "Ean", "Eafit"]
+ //document.write(universidades)
+ //document.write("Los elementos del aray son:" + universidades +" y su longitud es: " + universidades.length + "br>")
+
+ /** Crear un array con 5 notas obtener el promedio
+  */
+ //            0    1   2   3     4
+ //var notas = [3.5, 2.1, 5, 4.2, 4.8]
+// var acumulado=0
+ //for(var i=0; i<notas.length; i++){ //4
+   // acumulado=acumulado + notas[i] // 0+3.5 => 3.5+2.1 =>5.6+5 => 10.6+4 => 14.
+
+ // }
+// var promedio = acumulado/notas.length
+ // document.write("El promedio es: " + promedio)
+
+/**Implementar un algoritmo que me permita ingresar
+ * 5 personas, agregarlas a un array
+ * de invitados e imprimir sus nombres y la cantidad total
+ */
+// var nombre 
+// var cantidadInvitados = parseInt(prompt("Ingrese la cantidad de personas a invitar: "))
+// var invitados = []
+// for(var i=0; i<cantidadInvitados; i++){
+   // nombre = prompt("Ingrese el nombre del invitado: ")
+    // invitados.push(nombre)
+// }
+// document.write("Los invitados son: " + invitados + "<br>")
+// document.write("La cantidad de invitados es: " + invitados.length)
+
+/** Hacer un algoritmo que almacene en una matriz, las notas por periodo
+ * y la recorra, saque los promedios por periodo y la nota final
+ */
+var matriz = [
+    [4.1, 2, 3, 5],
+    [2.8, 1, 3.1, 2.9],
+    [2.4, 1.3, 4.2, 0.5],
+    [4.7, 5, 3.6, 2.3]
+]
+var notaPeriodo = 0
+var acumulado = 0
+for(var i=0; i<matriz.length; i++){
+    document.write(matriz[i] + "<br>")
+    for(var j=0; j<matriz[i].length; j++){
+        notaPeriodo = notaPeriodo+matriz[i][j]
+    }
+    notaPeriodo=notaPeriodo/matriz[i].length
+    document.write("La nota del periodo " + i + " es " + notaPeriodo + "<br>")
+    acumulado=acumulado+notaPeriodo
+}
+document.write("La nota final es: " + acumulado/matriz.length)
+
+
+    </script>
+    
+</body>
+</html>
